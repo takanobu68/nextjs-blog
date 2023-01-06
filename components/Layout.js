@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import styles from './layout.module.css';
-import utilStyles from '../styles/utils.module.css';
+import styles from '../styles/modules/layout.module.css';
+import utilStyles from '../styles/modules/utils.module.css';
 import Link from 'next/link';
 
 const name = 'Takanobu';
@@ -16,14 +16,17 @@ function Layout({ children, home }) {
         {home ? (
           <>
             <img
-              src="/images/pug-01.jpg"
+              src="/images/profile-img.jpg"
               className={`${utilStyles.borderCircle} ${utilStyles.headerHomeImage}`}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         ) : (
           <>
-            <img src="/images/pug-01.jpg" className={utilStyles.borderCircle} />
+            <img
+              src="/images/profile-img.jpg"
+              className={utilStyles.borderCircle}
+            />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         )}
