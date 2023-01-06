@@ -1,6 +1,6 @@
 ---
 title: 'ReactとNext.jsはどちらを使うべき？'
-date: '2023-01-03'
+date: '2023-01-04'
 thumbnail: '/images/thumbnail03.jpeg'
 ---
 
